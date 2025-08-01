@@ -8,18 +8,30 @@ type ButtonProps = ComponentProps<typeof LoadingButton> &
     icon?: React.ReactNode;
     isLeft?: boolean;
     hoverStyles?: React.CSSProperties;
+    hover?: React.CSSProperties;
+    pageId?: string;
+    config?: any;
+    metaData?: any;
+    "data-bx-key"?: string;
+    enableLoading?: boolean;
   };
 
-export const MUIButton = forwardRef<HTMLButtonElement, ButtonProps>(
+export const BuildxButton = forwardRef<HTMLButtonElement, ButtonProps>(
   ({
     variant,
     size,
     color,
     className,
     icon,
-    isLeft,
     children,
-    hoverStyles,
+    hover,
+    pageId,
+    config,
+    metaData,
+    "data-bx-key": dataBxKey,
+    enableLoading,
+    hoverStyles = hover,
+    isLeft,
     ...props
   }: ButtonProps) => {
     const muiProps = mapShadcnToMui(props);

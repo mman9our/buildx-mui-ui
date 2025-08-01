@@ -1,11 +1,11 @@
 import DeleteIcon from "@mui/icons-material/Delete";
 import SendIcon from "@mui/icons-material/Send";
 import type { Meta, StoryObj } from "@storybook/react";
-import { MUIButton } from ".";
+import { BuildxButton } from ".";
 
-const meta: Meta<typeof MUIButton> = {
+const meta: Meta<typeof BuildxButton> = {
   title: "Components/Button",
-  component: MUIButton,
+  component: BuildxButton,
   parameters: {
     layout: "centered",
   },

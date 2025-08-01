@@ -1,11 +1,11 @@
 import ImageIcon from "@mui/icons-material/Image";
 import PersonIcon from "@mui/icons-material/Person";
 import type { Meta, StoryObj } from "@storybook/react";
-import { MUIAvatar } from ".";
+import { BuildxAvatar } from ".";
 
-const meta: Meta<typeof MUIAvatar> = {
+const meta: Meta<typeof BuildxAvatar> = {
   title: "Components/Avatar",
-  component: MUIAvatar,
+  component: BuildxAvatar,
   parameters: {
     layout: "centered",
   },

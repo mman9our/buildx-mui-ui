@@ -9,7 +9,7 @@ interface MUIAvatarProps {
   [key: string]: any;
 }
 
-export const MUIAvatar: FC<MUIAvatarProps> = ({
+export const BuildxAvatar: FC<MUIAvatarProps> = ({
   src,
   style,
   children,
